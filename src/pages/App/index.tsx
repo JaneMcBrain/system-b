@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
+import LogoBlack from '../../components/LogoBlack';
+import LogoWhite from '../../components/LogoWhite';
 import Customer from '../Customer';
 import Team from '../Team';
 import './index.sass'
-const logo =  require('./../../assets/logo_small.png')
+const imgLeft =  require('./../../assets/images/bar.jpg')
+const imgRight =  require('./../../assets/images/bottles.jpg')
 
 function App() {
   const [showTeam, setShowTeam] = useState<boolean>(false)
@@ -18,17 +21,14 @@ function App() {
           className={getSplitClasses('left')}
           onClick={() => setShowTeam(true)}
         >
-          <img
-            width="112px"
-            src={logo}
-            alt="System B Logo"
-            className={`split-view__logo${showTeam ? ' is-left': ''}`}
-          />
+          <div className={`split-view__logo${showTeam ? ' is-left': ''}`}>
+            <LogoWhite />
+          </div>
           <div>
             <img
               className="split-view__img"
               alt="Bar work"
-              src="https://www.blackforestbaracademy.de/wp-content/uploads/2020/11/advanced-bartender-kurs-freiburg-cocktails.jpg" />
+              src={imgLeft} />
             <h1 className="split-view__h1 h1">
               <span>Werde</span>
               <span><span className="text-outline">Teil </span>von</span>
@@ -54,11 +54,14 @@ function App() {
             className={getSplitClasses('right') + ' bg-light customer'}
             onClick={() => setShowCustomer(true)}
           >
+            <div className={`split-view__logo${showCustomer ? ' is-left': ''}`}>
+            <LogoBlack />
+            </div>
             <div>
               <img
                 className="split-view__img"
-                alt="Bar work"
-                src="https://d3gz3j27p2eka6.cloudfront.net/sites/default/files/styles/image_spotlight_xl/public/2021-03/ebs-berlin-spotlight-01.jpg?h=3cd06fc8&itok=CH0eaXOy" />
+                alt="Behind the bar"
+                src={imgRight} />
               <h1 className="split-view__h1 h1">
                 <span className="text-outline">Buche</span>
                 <span>bei</span>
