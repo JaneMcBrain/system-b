@@ -27,23 +27,29 @@ $img_height: 410px
 
     &--left
       align-items: flex-end
-      padding: 187px 50px 80px 50px
+      padding: 187px 50px 80px 100px
 
       .split-view__img
         align-self: flex-end
       
       .split-view__h1
         left: 100px
+
+      .split-view__text
+        max-width: 375px
     
     &--right
       overflow: hidden
-      padding: 187px 63px 80px 50px
+      padding: 187px 100px 80px 50px
 
       .split-view__h1
         right: 63px
       
       .split-view__logo
         left: 0
+      
+      .split-view__text
+        max-width: 413px
 
   &__img
     width: 420px
@@ -57,7 +63,6 @@ $img_height: 410px
     line-height: 0.75
 
   &__text
-    max-width: 375px
     margin-top: 146px
   
 .team-intro

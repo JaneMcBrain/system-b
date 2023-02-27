@@ -38,7 +38,7 @@ function App() {
               <p 
                 className="split-view__text medium-text"
               >
-                Du hast Lust auf Gastronomie? Dann klicke hier und werde Teil unserer Crew. Egal ob du Einsteiger*in oder schon Profi bist, wir freuen uns auf deine Bewerbung!
+                Du hast Lust auf Gastronomie?<br></br> Dann klicke hier und werde Teil unserer Crew. Egal ob du Einsteiger*in oder schon Profi bist, wir freuen uns auf deine Bewerbung!
               </p>
             }
           </div>
@@ -71,7 +71,7 @@ function App() {
               <p
                 className="split-view__text medium-text"
               >
-                System B hat alles was dein Event benötigt! Du bist auf der Suche nach Personal, Logistik oder allgemeiner Unterstützung. Wir finden das perfekte Konzept für dich.
+                Du bist auf der Suche nach Gastro-Personal,<br></br> Logistik oder allgemeiner Unterstützung? <br></br>System.B hat alles was dein Event benötigt! Zusammen finden wir das perfekte Konzept für dich!
               </p>
             </div>
           </div>

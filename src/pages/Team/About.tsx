@@ -1,4 +1,4 @@
-import ScrollDown from "../../components/ScrollDown";
+import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import UpScroll from "../../components/UpScroll";
 
 export default function About(){
@@ -6,7 +6,7 @@ export default function About(){
     <div>
       <ScrollDown />
       <UpScroll />
-      <h1 className="h1 rotate-headline rotate-headline--right">About</h1>
+      <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
     </div>
   )
 }
