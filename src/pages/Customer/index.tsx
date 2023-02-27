@@ -1,6 +1,11 @@
+import Navigation from "../../components/Navigation";
+
 function Customer(){
+  const navItems = ['Über uns', 'Services', 'Join Us', 'Kontakt']
   return(
-    <div>Customer is visible</div>
+    <div>
+      <Navigation items={navItems} />
+    </div>
   )
 }
 
