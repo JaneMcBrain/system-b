@@ -7,7 +7,7 @@ export default function Navigation({items}: NavigationProps){
   return(
     <ul className="navigation">
       {items.map(item =>
-        <li>
+        <li key={item}>
           <a href={`#${item.trim()}`}>{item}</a>
         </li>
       )}

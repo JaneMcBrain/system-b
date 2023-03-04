@@ -1,6 +1,7 @@
 @import './styles/fonts'
 @import './styles/reset'
 @import './styles/variables'
+@import './styles/mixins'
 
 body
   margin: 0
@@ -31,6 +32,8 @@ body
   font-size: 87px
   color: $primary
   line-height: 63px
+  +breakpoint(small)
+    font-size: 50px
 
 .rotate-headline
   position: absolute
@@ -41,12 +44,14 @@ body
     left: 0
 
   &--right
-    right: 0
+    right: -245px
 
 .text-outline
   color: transparent
   -webkit-text-stroke-width: 2px
   -webkit-text-stroke-color: $secondary
+  +breakpoint(small)
+    -webkit-text-stroke-width: 1.5px
 
 .primary-text
   color: $primary
@@ -60,3 +65,12 @@ body
 
 .spacing-bottom-20
   margin-bottom: 20px
+
+.invisible-small
+  +breakpoint(small)
+    display: none
+
+.up-scroll
+  position: fixed
+  bottom: 100px
+  right: 100px
