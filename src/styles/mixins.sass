@@ -1,0 +1,7 @@
+=breakpoint($device)
+  @if $device == "medium"
+    @media only screen and (max-width: 1199px)
+      @content
+  @else if $device == "small"
+    @media only screen and (max-width: 912px)
+      @content

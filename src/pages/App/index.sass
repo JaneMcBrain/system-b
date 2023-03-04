@@ -1,8 +1,10 @@
 @import './../../styles/variables'
+@import './../../styles/mixins'
 
 $img_height: 410px
 
 .split-view
+  position: relative
   display: flex
   align-items: center
 
@@ -64,6 +66,25 @@ $img_height: 410px
 
   &__text
     margin-top: 146px
+
+  +breakpoint(medium)
+    &__split--left
+      padding-left: 50px
+      .split-view__h1
+        left: 50px
+    &__split--right
+      padding-right: 50px
+      .split-view__h1
+        right: 50px
+  
+  +breakpoint(small)
+    flex-direction: column
+    &__split
+      width: 100%
+      &--left
+        align-items: flex-start
+    &__h1
+      left: inherit
   
 .team-intro
   justify-content: center
@@ -76,3 +97,8 @@ $img_height: 410px
   bottom: 0
   left: 50%
   min-height: 900px
+
+  +breakpoint(small)
+    position: inherit
+    left: inherit
+    min-height: auto
