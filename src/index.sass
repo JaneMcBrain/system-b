@@ -10,6 +10,7 @@ body
   -moz-osx-font-smoothing: grayscale
   background-color: $black
   color: $white
+  overflow-x: hidden
 
 // Typography
 .medium-text
@@ -29,6 +30,7 @@ body
   font-size: 150px
 
 .h3
+  font-family: "roc-grotesk condensed", sans-serif
   font-size: 87px
   color: $primary
   line-height: 63px
@@ -44,14 +46,16 @@ body
     left: 0
 
   &--right
-    right: -245px
+    right: -355px
 
 .text-outline
   color: transparent
-  -webkit-text-stroke-width: 2px
+  -webkit-text-stroke-width: 1px
   -webkit-text-stroke-color: $secondary
-  +breakpoint(small)
-    -webkit-text-stroke-width: 1.5px
+
+  &.h1
+    -webkit-text-stroke-width: 2px
+
 
 .primary-text
   color: $primary
@@ -74,3 +78,11 @@ body
   position: fixed
   bottom: 100px
   right: 100px
+  z-index: 3
+
+.content
+  padding-left: 100px
+  padding-right: 100px
+  +breakpoint(small)
+    padding-left: 30px
+    padding-right: 30px

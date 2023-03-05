@@ -6,7 +6,9 @@ function Team(){
   return(
     <>
       <Navigation items={navItems} />
-      <About />
+      <div className="content">
+        <About />
+      </div>
     </>
   )
 }

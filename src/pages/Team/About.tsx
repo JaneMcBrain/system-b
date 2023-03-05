@@ -1,7 +1,8 @@
-import ArticleSections from "../../components/ArticleSection";
+import ArticleSections from "../../components/ArticleSection/ArticleSection";
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import UpScroll from "../../components/UpScroll";
 import { teamArticles } from "../../utils";
+import './styles.sass'
 
 export default function About(){
   const relax =  require('./../../assets/images/relax.jpg')
@@ -16,16 +17,19 @@ export default function About(){
     <div>
       <ScrollDown />
       <UpScroll />
-      <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
-      {teamArticles.map((article, index) =>
-        <ArticleSections
-          headline={article.headline}
-          key={article.headline[0].text}
-          imgSrc={images[index]}
-          text={article.text}
-          actionText={article.actionText}
-          actionLink={article.actionLink} />
-      )}
+      <div className="about-section">
+        <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
+        {teamArticles.map((article, index) =>
+          <ArticleSections
+            index={index}
+            headline={article.headline}
+            key={article.headline[0].text}
+            imgSrc={images[index]}
+            text={article.text}
+            actionText={article.actionText}
+            actionLink={article.actionLink} />
+        )}
+      </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import TextAction from '../../components/TextAction/TextAction';
 import { emailLinkTeam, emailTextTeam } from '../../utils';
 import Customer from '../Customer';
 import Team from '../Team';
-import './index.sass'
+import './styles.sass'
 const imgLeft =  require('./../../assets/images/bar.jpg')
 const imgRight =  require('./../../assets/images/bottles.jpg')
 
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <div className="split-view">
+      <div className={`split-view ${showTeam && 'team'} ${showCustomer &&'customer'}`}>
         <div 
           className={getSplitClasses('left')}
           onClick={() => setShowTeam(true)}
