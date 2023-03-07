@@ -1,3 +1,4 @@
+import { AccordionContent } from "./components/Accordion/Accordion"
 
 export const emailLinkTeam = '#'
 export const emailTextTeam = 'Jetzt bewerben'
@@ -56,6 +57,51 @@ export const teamArticles = [
       {text: 'werden', isOutlined: false}
     ],
     text: 'Eine Schicht bei Veranstaltungen ist oft in den Abendstunden und körperlich fordernd. Ihr müsst rechnen, immer aufmerksam und konzentriert sein und dabei mit vielen Menschen im Kontakt stehen. Kurz gesagt: Gastronomie und Veranstaltungsarbeit fordert Energie. Dafür muss es dann auch die richtige Entlohnung geben. Nicht jeder kann am Anfang gleich alles. Um also einen Anreiz zu schaffen, staffeln wir deine Vergütung nach Expertise. Und selbstverständlich steht dir auch immer dein Trinkgeld zu!',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+]
+
+export const teamServices: AccordionContent[] = [
+  {
+    headline: 'Veranstaltungsleitung ADL`s',
+    text: 'Wir vermitteln kompetentes Personal von der Barkraft bis zum Logistiker. Egal ob Konzert, Party, Festival, Biergarten oder Weihnachtsmarkt, jede Veranstaltung ohne Schlips und Kragen wird von uns kundenorientiert umgesetzt. Alle im Team sind im Besitz eines Gesundheitszeugnisses und Zapfen ist bei uns eine Grundausbildung. Einen detaillierten Überblick findest du unter Das Teams.',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '',
+    text: '',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam
   },
