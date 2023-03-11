@@ -2,7 +2,6 @@ import './styles.sass'
 
 interface AccordionProps{
   data: AccordionContent[]
-  images: any[]
 }
 export interface AccordionContent{
   headline: string
@@ -11,36 +10,30 @@ export interface AccordionContent{
   actionText: string
 }
 
-export default function Accordion({data, images}: AccordionProps){
+export default function Accordion({data}: AccordionProps){
+  const adl =  require('./../../assets/images/adl.jpg')
+  const bar =  require('./../../assets/images/beerbar.jpg')
+  const glasses =  require('./../../assets/images/glasses.jpg')
+  const tech =  require('./../../assets/images/tech.jpg')
+  const fun =  require('./../../assets/images/fun.jpg')
+  const wardrobe =  require('./../../assets/images/wardrobe.jpg')
+  const pans =  require('./../../assets/images/pans.jpg')
+  const images = [adl, bar, glasses, tech, fun, wardrobe, pans]
+
   return(
     <div className="accordion">
-      {data.map(item => 
-        <div key={`accordion_${item.headline.replace(' ', '_').toLowerCase()}`}>
-          <h3>{item.headline}</h3>
-          <div>
-            <p className="medium-text spacing-bottom-30">{item.text}</p>
-            <a className="link large-text primary-text" href={item.actionLink}>{item.actionText}</a>
+      {data.map((item, index) => 
+        <div className="accordion__item" key={`accordion_${item.headline.replace(' ', '_').toLowerCase()}`}>
+          <div className="accordion__text padding-50">
+            <h3 className="h3 text-outline spacing-bottom-30">{item.headline}</h3>
+            <div className="box-highlight padding-50">
+              <p className="medium-text spacing-bottom-30">{item.text}</p>
+              <a className="link-dark large-text bold" href={item.actionLink}>{item.actionText}</a>
+            </div>
           </div>
+          <img className="accordion__image" src={images[index]} alt={item.headline} />
         </div>
       )}
-      <div>
-        <img src="https://image.freepik.com/free-photo/lake-mountains_1204-507.jpg" alt="" />
-      </div>
-      <div>
-        <img src="https://image.freepik.com/free-photo/sunlight-forest_1004-9.jpg" alt="" />
-      </div>
-      <div>
-        <img src="https://image.freepik.com/free-photo/beautiful-green-park_1417-1443.jpg" alt="" />
-      </div>
-      <div>
-        <img src="https://image.freepik.com/free-photo/waterfall-that-is-layer-thailand_1150-15650.jpg" alt="" />
-      </div>
-      <div>
-        <img src="https://image.freepik.com/free-photo/sunrise-bali-jungle_1385-1644.jpg" alt="" />
-      </div>
-      <div>
-        <img src="https://image.freepik.com/free-photo/grass-with-sunlight-countryside-suburban_53876-42989.jpg" alt="" />
-      </div>
     </div>
   )
 }

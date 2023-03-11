@@ -18,7 +18,7 @@ export default function TextAction({headline, text, actionText, actionLink}: Tex
       </h2>}
       <div className="text-group">
         <p className="medium-text spacing-bottom-20">{text}</p>
-        <a className="link large-text primary-text" href={actionLink}>{actionText}</a>
+        <a className="link-light bold large-text primary-text" href={actionLink}>{actionText}</a>
       </div>
     </>
   )

@@ -6,19 +6,45 @@
   width: 100%
   height: 735px
 
-.accordion > div
-  width: 50%
-  flex-grow: 1
-  flex-shrink: 1
-  overflow: hidden
-  transition: all .5s ease
-  border: 5px solid transparent
-  position:relative
+  &:hover
+    .accordion__item
+      border-width: 2px
 
-.accordion > div:hover
-  flex-shrink:0
+  &__item
+    position: relative
+    width: 75%
+    flex-grow: 1
+    flex-shrink: 1
+    overflow: hidden
+    transition: all .5s ease
+    border: 5px solid transparent
+    position:relative
 
-.accordion div img
-  width: 100%
-  height: 100%
-  object-fit: cover
+    &:hover
+      flex-shrink: 0
+
+      .accordion__text
+        display: flex
+
+  &__text
+    display: none
+    position: absolute
+    left: 0
+    right: 0
+    flex-direction: column
+
+    .h3
+      letter-spacing: -2px
+      line-height: 75px
+      word-wrap: break-word
+      max-width: 100%
+    
+    .box-highlight
+      max-width: 66%
+      align-self: flex-end
+
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+

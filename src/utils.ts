@@ -70,7 +70,31 @@ export const teamServices: AccordionContent[] = [
     actionText: emailTextTeam
   },
   {
-    headline: '',
+    headline: 'Logistik',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: 'Erfahrene Barchef*innen',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: '„Die Juten“ Cateringhilfen',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: 'Freundliche Garderobencrew',
+    text: '',
+    actionLink: emailLinkTeam,
+    actionText: emailTextTeam
+  },
+  {
+    headline: 'Auf- und Abbau',
     text: '',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam
@@ -80,29 +104,5 @@ export const teamServices: AccordionContent[] = [
     text: '',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam
-  },
-  {
-    headline: '',
-    text: '',
-    actionLink: emailLinkTeam,
-    actionText: emailTextTeam
-  },
-  {
-    headline: '',
-    text: '',
-    actionLink: emailLinkTeam,
-    actionText: emailTextTeam
-  },
-  {
-    headline: '',
-    text: '',
-    actionLink: emailLinkTeam,
-    actionText: emailTextTeam
-  },
-  {
-    headline: '',
-    text: '',
-    actionLink: emailLinkTeam,
-    actionText: emailTextTeam
-  },
+  }
 ]
