@@ -1,5 +1,8 @@
+import Footer from "../../components/Footer/Footer";
 import Navigation from "../../components/Navigation";
 import About from "./About";
+import OnBoard from "./OnBoard";
+import Partner from "./Partner";
 import Services from "./Services";
 
 function Team(){
@@ -10,6 +13,9 @@ function Team(){
       <div className="content">
         <About />
         <Services />
+        <Partner />
+        <OnBoard />
+        <Footer />
       </div>
     </>
   )
