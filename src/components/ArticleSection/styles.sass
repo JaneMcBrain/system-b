@@ -1,3 +1,5 @@
+@import './../../styles/mixins'
+
 .article-section
   display: flex
 
@@ -45,3 +47,42 @@
     .text-group
       margin-top: 190px
 
+  +breakpoint(small)
+    flex-direction: column
+
+    &:first-of-type
+      margin-top: 77px
+    
+    &.is-reversed
+      flex-direction: column
+
+      &.article-section--3
+        .h3
+          margin-top: -65px
+
+    &.is-reversed, &.is-default
+      .h3
+        max-width: 360px
+        margin: 
+          top: -100px
+          right: inherit 
+          left: inherit 
+          bottom: 20px
+        span
+          line-height: 45px
+      
+      .text-group
+        padding: inherit
+
+    &--5
+      .h3
+        position: relative !important
+        width: inherit
+      .text-group
+        margin-top: 0
+
+    &:not(:last-of-type)
+      margin-bottom: 70px
+
+    &:last-of-type
+      margin-bottom: 100px

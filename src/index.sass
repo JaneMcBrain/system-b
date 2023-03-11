@@ -26,6 +26,9 @@ body
 .h1
   font-size: 200px
 
+  +breakpoint(small)
+    font-size: 100px
+
 .h2
   font-size: 150px
 
@@ -34,6 +37,7 @@ body
   font-size: 87px
   color: $primary
   line-height: 63px
+
   +breakpoint(small)
     font-size: 50px
 
@@ -41,6 +45,7 @@ body
   position: absolute
   display: inline-block
   rotate: 270deg
+  z-index: 2
 
   &--left
     left: -455px
@@ -76,6 +81,8 @@ body
 //Layout
 .padding-50
   padding: 50px
+  +breakpoint(small)
+    padding: 15px
 
 .box-highlight
   background-color: $primary
@@ -97,6 +104,8 @@ body
 
 .spacing-bottom-100
   margin-bottom: 100px
+  +breakpoint(small)
+    margin-bottom: 20px
 
 .invisible-small
   +breakpoint(small)

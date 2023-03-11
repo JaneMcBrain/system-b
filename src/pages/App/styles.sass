@@ -83,14 +83,25 @@ $img_height: 410px
   
   +breakpoint(small)
     flex-direction: column
+
+    &.team
+      .split-view__split
+        padding-top: 100px
+        padding-bottom: 92px
+
+      .split-view__split--right
+        padding-top: 30px
+
     &__split
       width: 100%
       padding-top: 125px
       padding-bottom: 118px
+
       &--left
         align-items: flex-start
         .split-view__h1
           top: 286px
+
       &--right
         padding-top: 100px
         .split-view__h1
@@ -98,11 +109,22 @@ $img_height: 410px
           top: 261px
         .split-view__img
           float: right
+
     &__h1
       left: inherit
       line-height: 45px
+
     &__logo
       top: 20px
+      .team &
+        top: 9px
+        &.is-left
+          left: 50%
+          margin-left: -16px
+        svg
+          width: 32px
+          height: 32px
+
     &__img
       width: 240px
       height: 230px
