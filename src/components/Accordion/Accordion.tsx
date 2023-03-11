@@ -25,7 +25,7 @@ export default function Accordion({data}: AccordionProps){
       {data.map((item, index) => 
         <div className="accordion__item" key={`accordion_${item.headline.replace(' ', '_').toLowerCase()}`}>
           <div className="accordion__text padding-50">
-            <h3 className="h3 text-outline spacing-bottom-30">{item.headline}</h3>
+            <h3 className="h3 text-outline spacing-bottom-100">{item.headline}</h3>
             <div className="box-highlight padding-50">
               <p className="medium-text spacing-bottom-30">{item.text}</p>
               <a className="link-dark large-text bold" href={item.actionLink}>{item.actionText}</a>
