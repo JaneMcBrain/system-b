@@ -1,0 +1,33 @@
+@import './../../styles/mixins'
+@import './../../styles/variables'
+  
+$number_images: 4
+$image_width: 400px
+$image_space: 80px
+
+.partner-banner
+  overflow-x: scroll
+  scrollbar-width: 0px
+  width: 100%
+  +hide-scrollbar
+
+  &__list
+    padding-right: calc($page-padding * 2)
+    white-space: nowrap
+    display: flex
+    align-items: center
+    width: calc($number_images*$image_width)
+
+  &__list-item
+    margin-right: $image_space
+
+    img
+      width: $image_width
+
+  +breakpoint(small)
+    &__list
+      padding-right: calc($page-padding-small * 2)
+    
+    &__list-item
+      img
+        width: 150px

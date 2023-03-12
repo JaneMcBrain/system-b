@@ -58,11 +58,13 @@
 
     &__item
       width: 100%
-      overflow: scroll
       align-items: flex-start
 
       &:hover
         height: 400px
+        overflow-y: scroll
+        +hide-scrollbar
+
     
     &__text
       .box-highlight

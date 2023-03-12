@@ -35,7 +35,7 @@ body
 .h3
   font-family: "roc-grotesk condensed", sans-serif
   font-size: 87px
-  color: $primary
+  color: $secondary
   line-height: 63px
 
   +breakpoint(small)
@@ -46,12 +46,6 @@ body
   display: inline-block
   rotate: 270deg
   z-index: 2
-
-  &--left
-    left: -455px
-
-  &--right
-    right: -355px
 
 .text-outline
   color: transparent
@@ -84,12 +78,18 @@ body
   +breakpoint(small)
     padding: 30px
 
+.padding-80
+  padding: 80px
+  +breakpoint(small)
+    padding: 50px
+
 .padding-20-small
   +breakpoint(small)
     padding: 20px
 
 .box-highlight
   background-color: $primary
+  color: $black
 
   p, a
     color: $black
@@ -111,6 +111,11 @@ body
   +breakpoint(small)
     margin-bottom: 20px
 
+.spacing-bottom-150
+  margin-bottom: 150px
+  +breakpoint(small)
+    margin-bottom: 70px
+
 .invisible-small
   +breakpoint(small)
     display: none
@@ -123,8 +128,8 @@ body
   cursor: pointer
 
 .content
-  padding-left: 100px
-  padding-right: 100px
+  padding-left: $page-padding
+  padding-right: $page-padding
   +breakpoint(small)
-    padding-left: 30px
-    padding-right: 30px
+    padding-left: $page-padding-small
+    padding-right: $page-padding-small

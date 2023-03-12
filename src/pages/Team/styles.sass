@@ -1,11 +1,60 @@
+@import './../../styles/mixins'
+
 .about-section
   position: relative
 
   .rotate-headline
     top: 729px
+    right: -355px
 
 .services-section
   position: relative
 
   .rotate-headline
     top: 263px
+    left: -455px
+
+.partner-section
+  margin-top: 260px
+  margin-bottom: 200px
+
+  .h3 span
+    display: block
+    line-height: 75px
+  
+  +breakpoint(small)
+    margin-top: 100px
+    margin-bottom: 100px
+
+    .h3 span
+      line-height: inherit
+
+.onoard-section
+  position: relative
+  margin-bottom: 200px
+
+  .marquee
+    margin-bottom: 150px
+
+  .rotate-headline
+    top: 470px
+    right: -400px
+
+.onboard-questions
+  display: flex
+  flex-wrap: wrap
+
+  .box-highlight
+    max-width: 630px
+    margin-bottom: 80px
+  
+  &__number
+    width: 25%
+
+  &__text
+    width: 75%
+    margin-bottom: 60px
+
+    &.h3
+      padding-top: 15px
+      line-height: 75px

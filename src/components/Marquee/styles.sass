@@ -1,0 +1,24 @@
+@import './../../styles/mixins'
+@import './../../styles/variables'
+
+.marquee-wrapper
+  overflow: hidden
+  width: 100vw
+  margin:
+    left: -$page-padding
+    right: -$page-padding
+  +breakpoint(small)
+    margin:
+      left: -$page-padding-small
+      right: -$page-padding-small
+
+.marquee
+  white-space: nowrap
+  animation: banner 10s infinite linear
+
+
+@keyframes banner
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(-161%, 0, 0)
