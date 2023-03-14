@@ -1,0 +1,55 @@
+@import './../../styles/mixins'
+@import './../../styles/variables'
+
+.form-section
+  display: flex
+  margin:
+    left: -$page-padding
+    right: -$page-padding
+
+  input
+    width: 100%
+    padding-bottom: 20px
+    margin-top: 20px
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid $black
+    color: $black
+    font-size: 16px
+
+  input::focus-visible
+    border: none
+    outline: none
+
+  input::placeholder
+    color: $black
+
+  input:hover
+    border-color: $primary
+    color: $primary
+
+  input:hover::placeholder
+    color: $primary
+
+  &--dark
+    input
+      border-bottom-color: $white
+      color: $white
+    
+    input::placeholder
+      color: $white
+
+  > div
+    width: 50%
+  
+  .form
+    padding: 60px $page-padding 60px 120px
+
+    &::focus-visible
+      outline: none
+
+
+  +breakpoint(small)
+    margin:
+      left: -$page-padding-small
+      right: -$page-padding-small

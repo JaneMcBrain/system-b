@@ -1,4 +1,4 @@
-import PartnerBanner from "../../components/PartnerBanner/PartnerBanner";
+import PartnerBanner from "../../components/PartnerSlider/PartnerSlider";
 
 export default function Partner(){
 

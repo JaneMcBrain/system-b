@@ -2,7 +2,7 @@
 @import './../../styles/variables'
   
 $number_images: 4
-$image_width: 400px
+$image_width: 250px
 $image_space: 80px
 
 .partner-banner
@@ -20,9 +20,12 @@ $image_space: 80px
 
   &__list-item
     margin-right: $image_space
+    padding: 8px
+    background-color: $white
 
     img
-      width: $image_width
+      max-width: $image_width
+      max-height: 150px
 
   +breakpoint(small)
     &__list

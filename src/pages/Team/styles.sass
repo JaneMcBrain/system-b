@@ -39,6 +39,9 @@
   .rotate-headline
     top: 470px
     right: -400px
+  
+  +breakpoint(small)
+    margin-bottom: 100px
 
 .onboard-questions
   display: flex
@@ -58,3 +61,15 @@
     &.h3
       padding-top: 15px
       line-height: 75px
+  
+  +breakpoint(small)
+    flex-direction: column
+    &__text, &__number
+      width: 100%
+
+      &.h3
+        line-height: inherit
+
+    .box-highlight
+      max-width: 100%
+      margin-bottom: 10px
