@@ -10,7 +10,7 @@ function Team(){
   return(
     <>
       <Navigation items={navItems} />
-      <div className="content">
+      <div className="team content">
         <About />
         <Services />
         <Partner />

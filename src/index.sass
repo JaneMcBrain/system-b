@@ -14,11 +14,16 @@ body
 
 // Typography
 .medium-text
-  line-height: 22px
   font-size: 16px
+  line-height: 22px
 
 .large-text
   font-size: 20px
+  line-height: 25px
+
+.small-text
+  font-size: 13px
+  line-height: 20px
 
 .h1, .h2, .h3
   font-weight: 600
@@ -42,6 +47,7 @@ body
 
   +breakpoint(small)
     font-size: 50px
+
 
 .rotate-headline
   position: absolute
@@ -69,7 +75,6 @@ body
   color: transparent
   -webkit-text-stroke-width: 1px
   -webkit-text-stroke-color: $secondary
-  
 
 .bold
   font-weight: bold
@@ -135,3 +140,77 @@ body
   +breakpoint(small)
     padding-left: $page-padding-small
     padding-right: $page-padding-small
+
+.split-content
+  display: flex
+  > div
+    width: 50%
+  +breakpoint(small)
+    flex-direction: column
+    > div
+      width: 100%
+
+//Form
+
+.checkbox-input
+  display: grid
+  width: 38px
+  height: 20px
+  border: 1px solid $white
+  accent-color: $primary
+  margin-right: 30px
+  margin-left: 0
+
+  &:checked::after
+    display: none
+
+  &::after
+    content: ''
+    display: block
+    margin-top: 2px
+    margin-left: 3px
+    width: 16px
+    height: 16px
+    background-color: $black
+
+.text-input, .textarea
+  width: 100%
+  padding-bottom: 20px
+  margin-top: 20px
+  background-color: transparent
+  border: none
+  border-bottom: 1px solid $black
+  color: $black
+  font-size: 16px
+
+.text-input::placeholder, .textarea:hover
+  color: $black
+
+.text-input:hover, .textarea:hover
+  border-color: $primary
+  color: $primary
+
+.text-input:hover::placeholder
+  color: $primary
+
+.team
+  .text-input, .textarea
+    border-bottom-color: $white
+    color: $white
+
+  .text-input
+    &::placeholder
+      color: $white
+
+.textarea
+  display: block
+  width: 100%
+  overflow: hidden
+  resize: both
+  min-height: 40px
+  line-height: 20px
+
+.textarea[contenteditable]:empty::before
+  content: "Nachricht"
+  &:hover
+    color: $primary
