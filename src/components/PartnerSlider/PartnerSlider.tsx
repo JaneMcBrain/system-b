@@ -21,7 +21,7 @@ export default function PartnerBanner(){
     <div className="partner-banner">
       <ul className="partner-banner__list">
         {images.map((image, index) =>
-          <li className="partner-banner__list-item">
+          <li key={image + index} className="partner-banner__list-item">
             <img src={image} alt={`partner-${index}`}/>
           </li>
         )}

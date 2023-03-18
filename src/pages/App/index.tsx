@@ -18,41 +18,43 @@ function App() {
 
   return (
     <>
-      <div className={`split-view ${showTeam && 'team'} ${showCustomer &&'customer'}`}>
-        <div 
-          className={getSplitClasses('left')}
-          onClick={() => setShowTeam(true)}
-        >
-          <div className={`split-view__logo${showTeam ? ' is-left': ''}`}>
-            <LogoWhite />
+      <div className={`split-view ${showTeam ? 'team' : ''} ${showCustomer ? 'customer' : ''}`}>
+        {!showCustomer &&
+          <div 
+            className={getSplitClasses('left')}
+            onClick={() => setShowTeam(true)}
+          >
+            <div className={`split-view__logo${showTeam ? ' is-left': ''}`}>
+              <LogoWhite />
+            </div>
+            <div>
+              <img
+                className="split-view__img"
+                alt="Bar work"
+                src={imgLeft} />
+              {showTeam ? 
+                <h1 className="split-view__h1 h3">
+                  <span>Werde</span>
+                  <span><span className="text-outline">Teil</span> von</span>
+                  <span>System B.</span>
+                </h1>
+              :
+                <h1 className="split-view__h1 h3">
+                  <span>Finde</span>
+                  <span className="text-outline">deinen </span>
+                  <span>Gastro-Job</span>
+                </h1>
+              }
+              {!showTeam &&
+                <p 
+                  className="split-view__text medium-text invisible-small"
+                >
+                  Du hast Lust auf Gastronomie?<br></br> Dann klicke hier und werde Teil unserer Crew. Egal ob du Einsteiger*in oder schon Profi bist, wir freuen uns auf deine Bewerbung!
+                </p>
+              }
+            </div>
           </div>
-          <div>
-            <img
-              className="split-view__img"
-              alt="Bar work"
-              src={imgLeft} />
-            {showTeam ? 
-              <h1 className="split-view__h1 h3">
-                <span>Werde</span>
-                <span><span className="text-outline">Teil</span> von</span>
-                <span>System B.</span>
-              </h1>
-            :
-              <h1 className="split-view__h1 h3">
-                <span>Finde</span>
-                <span className="text-outline">deinen </span>
-                <span>Gastro-Job</span>
-              </h1>
-            }
-            {!showTeam &&
-              <p 
-                className="split-view__text medium-text invisible-small"
-              >
-                Du hast Lust auf Gastronomie?<br></br> Dann klicke hier und werde Teil unserer Crew. Egal ob du Einsteiger*in oder schon Profi bist, wir freuen uns auf deine Bewerbung!
-              </p>
-            }
-          </div>
-        </div>
+        }
         {showTeam &&
           <div 
             className={getSplitClasses('right') + ' team-intro'}

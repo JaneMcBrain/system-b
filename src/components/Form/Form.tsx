@@ -41,7 +41,7 @@ export default function Form({type}: {type: string}){
             <div className="upload-button"></div>
           </label>
           <div className="checkbox-wrapper">
-            <input className="checkbox-input" id="agb_check" type="checkbox" checked={checked} onClick={() => setChecked(!checked)}/>
+            <input className="checkbox-input" id="agb_check" type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
             <label htmlFor="agb_check" className="small-text">Ich erkläre mich mit der Verarbeitung der eingegebenen Daten, sowie der Datenschutzerklärung einverstanden.</label>
           </div>
           <p className="link-light bold large-text primary-text">Senden</p>

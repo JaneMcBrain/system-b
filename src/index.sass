@@ -128,14 +128,19 @@ body
 
 .up-scroll
   position: fixed
-  bottom: 100px
-  right: 100px
+  bottom: $page-padding
+  right: $page-padding
   z-index: 3
   cursor: pointer
+
+  +breakpoint(small)
+    bottom: $page-padding-small
+    right: $page-padding-small
 
 .content
   padding-left: $page-padding
   padding-right: $page-padding
+
   +breakpoint(small)
     padding-left: $page-padding-small
     padding-right: $page-padding-small
@@ -184,7 +189,6 @@ body
   .text-input, .textarea
     border-bottom-color: $white
     color: $white
-
   .text-input
     &::placeholder
       color: $white
