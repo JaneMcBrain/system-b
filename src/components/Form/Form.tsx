@@ -1,9 +1,18 @@
-import { useState } from 'react'
+import { ChangeEvent, useRef, useState } from 'react'
 import './styles.sass'
 
 export default function Form({type}: {type: string}){
   const [checked, setChecked] = useState<boolean>(false)
   const className= type === 'team' ? "split-content form-section form-section--dark" : "split-content form-section"
+  const hiddenFileInput = useRef(null);
+  const [fileName, setFileName] = useState<string>('')
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    if(event.target.files && event.target.files[0].name){
+      setFileName(event.target.files[0].name);
+    }
+  };
+
   return(
     <div className={className}>
       <div className="box-highlight">
@@ -16,7 +25,21 @@ export default function Form({type}: {type: string}){
           <input className="text-input" placeholder="Telefonnummer" type="phone" name="phone" id="phone" required />
           <input className="text-input" placeholder="Alter" type="text" name="age" id="age" required />
           <span className="textarea" role="textbox" contentEditable></span>
-          <input type="file" id="b_video" name="bewerbungs_video" accept="image/png, image/jpeg" />
+          <input
+            ref={hiddenFileInput}
+            type="file"
+            accept="video/*"
+            style={{ display: 'none' }}
+            id="video-upload"
+            onChange={handleChange}
+          />
+          <label htmlFor="video-upload" className="textarea">
+            {fileName.length > 0 ?
+              <p className="primary-text">Hochgeladen: {fileName}</p> :
+              <p className="medium-text">Video uploaden</p>
+            }
+            <div className="upload-button"></div>
+          </label>
           <div className="checkbox-wrapper">
             <input className="checkbox-input" id="agb_check" type="checkbox" checked={checked} onClick={() => setChecked(!checked)}/>
             <label htmlFor="agb_check" className="small-text">Ich erkläre mich mit der Verarbeitung der eingegebenen Daten, sowie der Datenschutzerklärung einverstanden.</label>

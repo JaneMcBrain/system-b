@@ -80,9 +80,20 @@
   .h3
     margin-bottom: 60px
     line-height: 75px
+
   .contact
     padding-right: 65px
     margin-bottom: 57px
+
+    &__input
+      position: relative
+      
+      p
+        margin-top: 20px
+        position: absolute
+        right: 0
+        top: 0
+
 
   .impress
     padding-left: 120px
@@ -92,6 +103,49 @@
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    flex-direction: row-reverse
 
     a:first-of-type
       margin-right: 60px
+  
+  .social-icons
+    float: right
+    margin-top: -26px
+    img
+      width: 53px
+      height: 53px
+
+      &:first-of-type
+        margin-right: 30px
+    
+  +breakpoint(medium)
+    .h1
+      font-size: min(200px, 100px)
+      margin-right: auto
+
+    .social-icons
+      margin-top: 20px
+
+  +breakpoint(small)
+    .contact
+      padding-right: 0
+    
+    .impress
+      padding-left: 0px
+
+    .h3
+      line-height: 45px
+    
+    .footer-nav
+      flex-direction: column
+      align-items: flex-start
+
+      &__links
+        margin-bottom: 70px
+        display: flex
+        flex-direction: column
+
+        a:first-of-type
+          margin-right: 0
+          margin-bottom: 20px
+

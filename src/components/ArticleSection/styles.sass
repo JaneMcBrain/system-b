@@ -47,8 +47,24 @@
     .text-group
       margin-top: 190px
 
+  +breakpoint(medium)
+    img
+      max-width: 50%
+      align-self: center
+    &.is-reversed
+      .h3
+        margin-left: 0
+      .text-group
+        padding-right: 50px
+    &.is-default
+      .text-group
+        padding-left: 50px
+
   +breakpoint(small)
     flex-direction: column
+
+    img
+      max-width: 100%
 
     &:first-of-type
       margin-top: 77px

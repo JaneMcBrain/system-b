@@ -18,12 +18,25 @@
   
   .form
     padding: 60px $page-padding 60px 120px
-
+  +breakpoint(medium)
+    .form
+      padding-left: 60px
   +breakpoint(small)
     margin:
       left: -$page-padding-small
       right: -$page-padding-small
       bottom: 100
+
+    .box-highlight
+      padding-top: 100px
+      padding-bottom: 100px
+
+      .h3
+        line-height: 45px
+
+    .form
+      padding-right: $page-padding-small
+      padding-left: $page-padding-small
 
 .checkbox-wrapper
   display: flex
