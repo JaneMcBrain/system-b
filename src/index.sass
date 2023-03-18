@@ -8,9 +8,17 @@ body
   font-family: "roc-grotesk", sans-serif
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+  overflow-x: hidden
   background-color: $black
   color: $white
-  overflow-x: hidden
+
+  &.light
+    background-color: $white
+    color: $black
+
+  &.dark
+    background-color: $black
+    color: $white
 
 // Typography
 .medium-text
@@ -59,8 +67,14 @@ body
   -webkit-text-stroke-width: 1px
   -webkit-text-stroke-color: $secondary
 
+  .light &
+    -webkit-text-stroke-width: 3px
+
   &.h1
     -webkit-text-stroke-width: 2px
+
+    .light &
+      -webkit-text-stroke-width: 3px
 
 .primary-text
   color: $primary
@@ -155,7 +169,6 @@ body
       width: 100%
 
 //Form
-
 .checkbox-input
   display: grid
   width: 38px
@@ -185,7 +198,7 @@ body
 .text-input:hover::placeholder
   color: $primary
 
-.team
+.dark
   .text-input, .textarea
     border-bottom-color: $white
     color: $white
@@ -242,3 +255,5 @@ label.textarea
     border-left: 1px solid $white
     border-top: 1px solid $white
     rotate: 45deg
+
+@import './styles/sections'

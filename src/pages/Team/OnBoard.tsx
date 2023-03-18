@@ -4,7 +4,7 @@ import Marquee from "../../components/Marquee/Marquee";
 export default function OnBoard(){
 
   return(
-    <div className="onoard-section">
+    <div className="onoard-section" id="onboard">
       <Marquee text="Werde ein Teil unseres Teams! Werde ein Teil unseres Teams!" />
       <h1 className="h1 rotate-headline rotate-headline--right text-outline spacing-bottom-150">Join us</h1>
       <div className="onboard-questions">

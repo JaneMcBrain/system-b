@@ -8,18 +8,6 @@ $img_height: 410px
   display: flex
   align-items: center
 
-  &__logo
-    position: absolute
-    top: 51px
-    left: 50%
-    margin-left: -39px
-    transition: all 1s
-
-    &.is-left
-      left: 100px
-      margin-left: 0
-      transition: all 1s
-
   &__split
     box-sizing: border-box
     display: flex
@@ -57,6 +45,19 @@ $img_height: 410px
       .split-view__text
         max-width: 413px
 
+  &__logo
+    position: absolute
+    top: 51px
+    left: 50%
+    margin-left: -39px
+    transition: all 1s
+
+    &.is-left
+      top: 40px
+      left: 100px
+      margin-left: 0
+      transition: all 1s
+
   &__img
     width: 420px
     height: $img_height
@@ -84,7 +85,7 @@ $img_height: 410px
   +breakpoint(small)
     flex-direction: column
 
-    &.team
+    &.team-active
       .split-view__split
         padding-top: 100px
         padding-bottom: 92px
@@ -116,7 +117,7 @@ $img_height: 410px
 
     &__logo
       top: 20px
-      .team &
+      .team-active &, .customer-active &
         top: 9px
         &.is-left
           left: 50%
@@ -133,6 +134,9 @@ $img_height: 410px
   justify-content: center
   min-height: $img_height
 
+.customer-active
+  height: 75vh
+
 .customer
   position: absolute
   top: 0
@@ -141,7 +145,19 @@ $img_height: 410px
   left: 50%
   min-height: 100vh
 
+  .customer-active &
+    left: 0
+    width: 50%
+
   +breakpoint(small)
     position: inherit
     left: inherit
     min-height: auto
+
+.customer-intro
+  position: absolute
+  height: 100vh
+  top: 0
+  bottom: 0
+  right: 0
+  margin-top: 99px

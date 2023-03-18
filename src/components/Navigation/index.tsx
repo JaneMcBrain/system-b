@@ -1,7 +1,12 @@
 import { useState } from 'react';
 import './styles.sass'
 interface NavigationProps{
-  items: string[]
+  items: Link[]
+}
+
+interface Link{
+  text: string,
+  link: string
 }
 
 export default function Navigation({items}: NavigationProps){
@@ -24,8 +29,8 @@ export default function Navigation({items}: NavigationProps){
       <div className={iconClass} onClick={onIconClick}></div>
       <ul className={navClass}>
         {items.map(item =>
-          <li key={item}>
-            <a href={`#${item.trim()}`}>{item}</a>
+          <li key={item.text}>
+            <a href={`#${item.link}`}>{item.text}</a>
           </li>
         )}
       </ul>

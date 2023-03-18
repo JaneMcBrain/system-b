@@ -6,7 +6,13 @@ import Partner from "./Partner";
 import Services from "./Services";
 
 function Team(){
-  const navItems = ['Über uns', 'Services', 'Join Us', 'Kontakt']
+  const navItems = [
+    {text: 'Über uns', link: 'about'},
+    {text: 'Unser Team', link: 'service'},
+    {text: 'Join Us', link: 'onboard'},
+    {text: 'Kontakt', link: 'contact'}
+  ]
+
   return(
     <>
       <Navigation items={navItems} />

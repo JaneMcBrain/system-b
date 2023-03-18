@@ -1,16 +1,13 @@
 import ArticleSections from "../../components/ArticleSection/ArticleSection";
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
 import UpScroll from "../../components/UpScroll";
-import { teamArticles } from "../../utils";
+import { customerArticles } from "../../utils";
 
 export default function About(){
-  const relax =  require('./../../assets/images/relax.jpg')
-  const knowhow =  require('./../../assets/images/knowhow.jpg')
-  const person =  require('./../../assets/images/person.jpg')
-  const subway =  require('./../../assets/images/subway.jpg')
-  const fun =  require('./../../assets/images/fun.jpg')
-  const supreme =  require('./../../assets/images/supreme.jpg')
-  const images = [relax, knowhow, person, subway, fun, supreme]
+  const bar =  require('./../../assets/images/outdoorbar.jpg')
+  const concert =  require('./../../assets/images/concert.jpg')
+  const laser =  require('./../../assets/images/laser.jpg')
+  const images = [bar, concert, laser]
 
   return(
     <div>
@@ -18,7 +15,7 @@ export default function About(){
       <UpScroll />
       <div className="about-section" id="about">
         <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
-        {teamArticles.map((article, index) =>
+        {customerArticles.map((article, index) =>
           <ArticleSections
             index={index}
             headline={article.headline}
