@@ -14,7 +14,6 @@ export default function Navigation({items}: NavigationProps){
   const [navClass, setNavClass] = useState<string>('navigation')
 
   const onIconClick = () => {
-    console.log('click')
     if(iconClass.includes('is-active')){
       setIconClass('nav-bar');
       setNavClass('navigation')
@@ -30,7 +29,7 @@ export default function Navigation({items}: NavigationProps){
       <ul className={navClass}>
         {items.map(item =>
           <li key={item.text}>
-            <a href={`#${item.link}`}>{item.text}</a>
+            <a href={`#${item.link}`} onClick={onIconClick}>{item.text}</a>
           </li>
         )}
       </ul>

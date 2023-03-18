@@ -1,16 +1,24 @@
 .about-section
   position: relative
 
+  .light &
+    .h3
+      span
+        display: block
+
   .rotate-headline
     top: 729px
-    right: -355px
+
+  +breakpoint(small)
+    .rotate-headline
+      top: 511px
 
 .services-section
   position: relative
 
   .rotate-headline
-    top: 263px
-    left: -455px
+    top: 368px
+    letter-spacing: -5px
 
 .team-structure-section
   position: relative
@@ -20,13 +28,19 @@
   .rotate-headline
     letter-spacing: -6px
     top: 388px
-    left: -572px
-  
+
   .link-light
     float: right
     margin-top: 123px
     margin-right: 90px
 
+  +breakpoint(small)
+    padding-top: 0px
+
+    .rotate-headline
+      top: 332px
+      width: 600px
+      letter-spacing: inherit
 
 .partner-section
   margin-top: 260px
@@ -55,10 +69,12 @@
 
   .rotate-headline
     top: 470px
-    right: -400px
   
   +breakpoint(small)
     margin-bottom: 100px
+
+    .rotate-headline
+      width: 355px
 
 .onboard-questions
   display: flex
@@ -137,7 +153,7 @@
     
   +breakpoint(medium)
     .h1
-      font-size: min(200px, 100px)
+      font-size: min(200px, 17vw)
       margin-right: auto
 
     .social-icons

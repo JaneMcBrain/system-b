@@ -8,9 +8,14 @@
     right: 0
     top: 0
     left: 0
-    background-color: $black
     padding-right: $page-padding-small
     padding-left: $page-padding-small
+
+    .light &
+      background-color: $white
+  
+    .dark &
+      background-color: $black
 
 .nav-bar
   display: none
@@ -27,8 +32,13 @@
     position: absolute
     width: 27px
     height: 1px
-    background-color: $white
     transform: rotate(0)
+
+    .light &
+      background-color: $black
+  
+    .dark &
+      background-color: $white
   
   &::before
     top: 20px
@@ -71,10 +81,15 @@
     padding-top: 10px
     padding-right: 30px
     padding-left: 30px
-    background-color: $black
     flex-direction: column
     align-items: center
     justify-content: center
+
+    .light &
+      background-color: $white
+  
+    .dark &
+      background-color: $black
 
     &.is-active
       display: flex

@@ -52,7 +52,7 @@ function App() {
             <div className={`split-view__logo${showTeam ? ' is-left': ''}`}>
               <LogoWhite />
             </div>
-            <div>
+            <div className="small-viewport-helper">
               <img
                 className="split-view__img"
                 alt="Bar work"
@@ -99,7 +99,7 @@ function App() {
             <div className={`split-view__logo${showCustomer ? ' is-left': ' invisible-small'}`}>
               <LogoBlack />
             </div>
-            <div>
+            <div className="small-viewport-helper">
               <img
                 className="split-view__img"
                 alt="Behind the bar"
