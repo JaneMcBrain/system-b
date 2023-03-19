@@ -5,8 +5,8 @@ export default function Services(){
 
   return(
     <div className="services-section" id="service">
-      <h1 className="h1 text-outline rotate-headline rotate-headline--left">Services</h1>
       <Accordion data={teamServices}/>
+      <h1 className="h1 text-outline rotate-headline rotate-headline--left">Services</h1>
     </div>
   )
 }
