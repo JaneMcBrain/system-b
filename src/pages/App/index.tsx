@@ -16,6 +16,7 @@ function App() {
   const getSplitClasses = (direction: string) => {
     return `split-view__split split-view__split--${direction}`
   }
+
   useEffect(() => {
     if(showTeam){
       document.body.classList.add('dark');
@@ -33,11 +34,9 @@ function App() {
   }, [showCustomer])
 
   const onTeamClick = () => {
-    console.log('team')
     setShowTeam(true)
   }
   const onCustomerClick = () => {
-    console.log('customer')
     setShowCustomer(true)
   }
 
