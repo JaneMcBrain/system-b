@@ -1,10 +1,10 @@
+import { createBrowserHistory } from '@remix-run/router';
 import React, { useEffect, useState } from 'react';
+import { Outlet, useNavigate } from 'react-router-dom';
 import LogoBlack from '../../components/LogoBlack';
 import LogoWhite from '../../components/LogoWhite';
 import TextAction from '../../components/TextAction/TextAction';
 import { emailLinkTeam, emailTextTeam } from '../../utils';
-import Customer from '../Customer';
-import Team from '../Team';
 import './styles.sass'
 const imgLeft =  require('./../../assets/images/bar.jpg')
 const imgRight =  require('./../../assets/images/bottles.jpg')
@@ -12,9 +12,15 @@ const imgRight =  require('./../../assets/images/bottles.jpg')
 function App() {
   const [showTeam, setShowTeam] = useState<boolean>(false)
   const [showCustomer, setShowCustomer] = useState<boolean>(false)
+  const navigate = useNavigate();
+  const history = createBrowserHistory()
 
   const getSplitClasses = (direction: string) => {
     return `split-view__split split-view__split--${direction}`
+  }
+
+  const onLogoClick = () => {
+    console.log('logo click')
   }
 
   useEffect(() => {
@@ -33,11 +39,18 @@ function App() {
     }
   }, [showCustomer])
 
+  useEffect(() => {
+    setShowTeam(history.location.pathname === '/new/team')
+    setShowCustomer(history.location.pathname === '/new/customer')
+  }, [history.location])
+
   const onTeamClick = () => {
     setShowTeam(true)
+    navigate("./team");
   }
   const onCustomerClick = () => {
     setShowCustomer(true)
+    navigate("./customer");
   }
 
   return (
@@ -48,7 +61,7 @@ function App() {
             className={getSplitClasses('left')}
             onClick={onTeamClick}
           >
-            <div className={`split-view__logo${showTeam ? ' is-left': ''}`}>
+            <div onClick={onLogoClick} className={`split-view__logo${showTeam ? ' is-left': ''}`}>
               <LogoWhite />
             </div>
             <div className="small-viewport-helper">
@@ -95,7 +108,7 @@ function App() {
             className={getSplitClasses(showCustomer ? 'left' : 'right') + ' bg-light customer'}
             onClick={onCustomerClick}
           >
-            <div className={`split-view__logo${showCustomer ? ' is-left': ' invisible-small'}`}>
+            <div onClick={onLogoClick} className={`split-view__logo${showCustomer ? ' is-left': ' invisible-small'}`}>
               <LogoBlack />
             </div>
             <div className="small-viewport-helper">
@@ -137,12 +150,13 @@ function App() {
           </div>
         }
       </div>
-      {showTeam &&
+      <Outlet />
+      {/* {showTeam &&
         <Team />
       }
       {showCustomer &&
         <Customer />
-      }
+      } */}
     </>
   );
 }

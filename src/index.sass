@@ -227,6 +227,11 @@ body
   .text-input
     &::placeholder
       color: $white
+  .text-input:hover, .textarea:hover
+    border-color: $primary
+    color: $primary
+  .text-input:hover::placeholder
+    color: $primary
 
 .textarea
   display: block
@@ -279,3 +284,23 @@ label.textarea
     rotate: 45deg
 
 @import './styles/sections'
+
+.construction
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100vh
+  svg
+    width: 100px
+    height: 100px
+  h1
+    margin-top: 70px
+    margin-bottom: 40px
+    text-align: center
+    max-width: 70%
+    line-height: 1.5
+  p
+    margin-bottom: 20px
+  a
+    margin-bottom: 40px

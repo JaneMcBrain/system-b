@@ -22,7 +22,7 @@ export default function Form({type}: {type: string}){
       </div>
       <div>
         <form action="" method="get" className="form">
-          <input className="text-input" placeholder={isTeam() ? "Vorname*" : "Name"} type="text" name="name" id="name" required />
+          <input className="text-input" placeholder="Vorname*" type="text" name="name" id="name" required />
           {isCustomer() &&
             <input className="text-input" placeholder="Firma" type="text" name="firma" id="firma" />
           }

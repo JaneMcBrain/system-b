@@ -90,14 +90,7 @@ export const teamServices: AccordionContent[] = [
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: glasses
-  },
-  {
-    headline: 'Die Barprofis',
-    text: 'Wenn du dich hinter einer Bar so richtig wohl fühlst, schon alle Handgriffe beherrschst und deinen Kolleg*innen gerne mal unter die Arme greifst, wird es Zeit eine Bar zu leiten. Als Barchef*in sorgst du für eine effiziente Organisation und einen reibungslosen Betrieb - angefangen beim Aufbau und der Struktur deiner Bar, bis hin zum Anleiten und Anlernen deiner Crew.',
-    actionLink: emailLinkTeam,
-    actionText: emailTextTeam,
-    image: glasses
-  },
+  }, 
   {
     headline: 'Auf- und Abbau',
     text: 'Arbeite hinter den Kulissen und gestalte mit deinem Team eine Location, die sich sehen lässt. Bühne montieren, Bars bauen, Chillecken einrichten, aus einem Raum oder einer leeren Halle lässt du eine glänzende Eventlocation entstehen und am Ende kannst du mit einem Blick auf das Erschaffene sagen: “Geil geworden, jetzt kommt der Abriss!” Wenn dich das anspricht, bist du richtig im Auf- & Abbau Team. ',
@@ -167,8 +160,8 @@ export const customerArticles = [
 
 export const customerServices: AccordionContent[] = [
   {
-    headline: 'Abenddienstleitung',
-    text: 'Unsere erfahrenen Veranstaltungsleitungen koordinieren hinter den Kulissen das gesamte Event. Als Kommunikationsglied zwischen Gästen, euch als Veranstalter*innen und dem restlichen Team sorgen Sie für einen reibungslosen Ablauf und kümmern sich lösungsorientiert um alle auftretenden Probleme. Sie behalten Kassen und Abrechnungen im Auge, sind für deine Gäste da und unterstützen dich nebenbei bei allem, was dir als Veranstalter*in wichtig ist. Die ADL’s sind also deine Ansprechpartner*innen Nummer 1 – und echte Allrounder noch dazu!',
+    headline: 'Stagehands',
+    text: 'Bei unseren Stagehands dreht sich alles um die kleine und große Zuarbeit für die Technik. Cases rollen, Verkabeln helfen und ordentlich mit anpacken, damit Licht und Ton bei deiner Veranstaltung richtig gut zur Geltung kommen.',
     actionLink: emailLinkCustomer,
     actionText: emailTextCustomer,
     image: adl
@@ -214,12 +207,5 @@ export const customerServices: AccordionContent[] = [
     actionLink: emailLinkCustomer,
     actionText: emailTextCustomer,
     image: glasses2
-  },
-  {
-    headline: 'Stagehands',
-    text: 'Bei unseren Stagehands dreht sich alles um die kleine und große Zuarbeit für die Technik. Cases rollen, Verkabeln helfen und ordentlich mit anpacken, damit Licht und Ton bei deiner Veranstaltung richtig gut zur Geltung kommen.',
-    actionLink: emailLinkCustomer,
-    actionText: emailTextCustomer,
-    image: tech
   },
 ]

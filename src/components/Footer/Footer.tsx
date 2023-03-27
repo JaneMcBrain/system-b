@@ -1,5 +1,4 @@
 import instagram from './../../assets/logos/instagram.svg'
-import tiktok from './../../assets/logos/tiktok.png'
 export default function Footer(){
 
   return(
@@ -7,10 +6,7 @@ export default function Footer(){
         <div className="split-content">
           <div className="contact">
             <h1 className="h3">Lass uns sprechen!</h1>
-            <div className="contact__input">
-              <input className="text-input" placeholder="E-Mail"/>
-              <p className="link-light bold large-text primary-text">Senden</p>
-            </div>
+            <a className="link-light bold large-text primary-text" href="mailto:info@systemb.berlin">E-Mail Senden</a>
           </div>
           <div className="impress">
             <h4 className="primary-text bold large-text spacing-bottom-20">Kontakt</h4>
@@ -19,7 +15,6 @@ export default function Footer(){
             <p className="large-text">info@systemb.berlin</p>
             <div className="social-icons">
               <img src={instagram} alt="System.B Instagram"/>
-              <img src={tiktok} alt="System.B Tik Tok"/>
             </div>
           </div>
         </div>

@@ -8,8 +8,13 @@ $image_space: 80px
 .partner-banner
   overflow-x: scroll
   scrollbar-width: 0px
-  width: 100%
+  width: 100vw
+  margin-left: -100px
+  padding-left: 100px
   +hide-scrollbar
+
+  .dark &
+    background-color: $secondary
 
   &__list
     padding-right: calc($page-padding * 2)
@@ -21,7 +26,6 @@ $image_space: 80px
   &__list-item
     margin-right: $image_space
     padding: 8px
-    background-color: $white
 
     img
       max-width: $image_width
