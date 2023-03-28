@@ -71,50 +71,50 @@ const wardrobe =  require('./assets/images/wardrobe.jpg')
 const pans =  require('./assets/images/pans.jpg')
 export const teamServices: AccordionContent[] = [
   {
-    headline: 'Allrounder*in',
-    text: 'Behalte den Überblick und den Laden am Laufen. Als Abenddienstleitung sorgst du dafür den Gästen ein Lächeln auf die Lippen zu zaubern und somit für einen gelungenen Ablauf des ganzen Events - egal ob kleiner Weihnachtsmarkt mit 100 Gästen, einer Konzertveranstaltung mit 3000 Leuten oder einer Produktion auf Festivals. Du koordinierst hinter den Kulissen ein ganzes Team und bist das Kommunikationsglied zwischen Gästen, Veranstalter*innen und deiner Crew. Nebenbei behältst du die Kassen und Abrechnungen im Auge und kümmerst dich flexibel und lösungsorientiert um alle auftretenden Probleme.',
+    headline: 'Veranstaltungsleitung ADL´s',
+    text: 'Wir vermitteln kompetentes Personal von der Barkraft bis zum Logistiker. Egal ob Konzert, Party, Festival, Biergarten oder Weihnachtsmarkt, jede Veranstaltung ohne Schlips und Kragen wird von uns kundenorientiert umgesetzt. Alle im Team sind im Besitz eines Gesundheitszeugnisses und Zapfen ist bei uns eine Grundausbildung. Einen detaillierten Überblick findest du unter Das Teams.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: adl
   },
   {
-    headline: 'Aktive Logistiker*innen / Runner',
-    text: 'Du organisierst den Nachschub und sorgst dafür, dass Bars oder Caterings immer mit ausreichend Ware und Equipment versorgt sind. Und obwohl du ein Auge dafür hast, dir Transport und Wege so einfach wie möglich zu machen, fühlst dich erst so richtig wohl, wenn du ins Schwitzen kommst.<br>Und wenn dir Kühlschränke auffüllen nicht mehr reicht und du gute Ideen für Lagerkonzepte hast, gerne eine Logistikcrew anleitest, für dich Kühlketten, CO2-Druck, Hubwagen und Inventur keine Fremdwörter sind hast du definitiv das Zeug als Logistikchef*in durchzustarten.',
+    headline: 'Logistik',
+    text: 'Du organisierst den Nachschub und sorgst dafür, dass Bars oder Caterings immer mit ausreichend Ware und Equipment versorgt sind. Und obwohl du ein Auge dafür hast, dir Transport und Wege so einfach wie möglich zu machen, fühlst dich erst so richtig wohl, wenn du ins Schwitzen kommst. Und wenn dir Kühlschränke auffüllen nicht mehr reicht und du gute Ideen für Lagerkonzepte hast, gerne eine Logistikcrew anleitest, für dich Kühlketten, CO2-Druck, Hubwagen und Inventur keine Fremdwörter sind hast du definitiv das Zeug als Logistikchef*in durchzustarten.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: bar
   },
   {
-    headline: 'Die Held*innen hinter der Bar',
-    text: 'Du sorgst gerne für das leibliche Wohl deiner Besucher*innen und zauberst dabei Getränke schnell und effizient hervor - denn du weißt, dass niemand gerne für sein Bier ansteht. Wenn dir dazu noch Arbeiten im Team liegt und du kommunikationsfreudig bist, ist die Bar der richtige Ort für dich. Denn hier geht es nicht nur ums Zapfen, Longdrinks mischen, Limo ausschenken und Kopfrechnen - die Barcrew ist auch das freundliche Gesicht einer Veranstaltung und immer Ansprechpartner*in für alle Probleme.',
+    headline: 'Erfahrene Barchef *innen',
+    text: 'Wenn du dich hinter einer Bar so richtig wohl fühlst, schon alle Handgriffe beherrschst und deinen Kolleg*innen gerne mal unter die Arme greifst, wird es Zeit eine Bar zu leiten. Als Barchef*in sorgst du für eine effiziente Organisation und einen reibungslosen Betrieb - angefangen beim Aufbau und der Struktur deiner Bar, bis hin zum Anleiten und Anlernen deiner Crew.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: glasses
   }, 
   {
     headline: 'Auf- und Abbau',
-    text: 'Arbeite hinter den Kulissen und gestalte mit deinem Team eine Location, die sich sehen lässt. Bühne montieren, Bars bauen, Chillecken einrichten, aus einem Raum oder einer leeren Halle lässt du eine glänzende Eventlocation entstehen und am Ende kannst du mit einem Blick auf das Erschaffene sagen: “Geil geworden, jetzt kommt der Abriss!” Wenn dich das anspricht, bist du richtig im Auf- & Abbau Team. ',
+    text: 'Arbeite hinter den Kulissen und gestalte mit deinem Team eine Location, die sich sehen lässt. Bühne montieren, Bars bauen, Chillecken einrichten, aus einem Raum oder einer leeren Halle lässt du eine glänzende Eventlocation entstehen und am Ende kannst du mit einem Blick auf das Erschaffene sagen: “Geil geworden, jetzt kommt der Abriss!” Wenn dich das anspricht, bist du richtig im Auf- & Abbau Team.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: tech
   },
   {
-    headline: 'Die Servicecrew',
-    text: 'Egal ob Sektempfang, Flying Snacks, oder Ansprechpartner*in für die Gäste: Du bist immer zur Stelle, um den Besucher*innen einen gelungenen Abend zu bereiten. Du behältst das Buffet im Auge, sorgst für ein ordentliches Ambiente und hast dabei natürlich immer ein Lächeln auf den Lippen.',
+    headline: 'Service',
+    text: 'Arbeite hinter den Kulissen und gestalte mit deinem Team eine Location, die sich sehen lässt. Bühne montieren, Bars bauen, Chillecken einrichten, aus einem Raum oder einer leeren Halle lässt du eine glänzende Eventlocation entstehen und am Ende kannst du mit einem Blick auf das Erschaffene sagen: “Geil geworden, jetzt kommt der Abriss!” Wenn dich das anspricht, bist du richtig im Auf- & Abbau Team.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: glasses2
   },
   {
     headline: 'Freundliche Garderobencrew',
-    text: 'Du nimmst das persönliche Hab und Gut der Besucher*innen entgegen. Dabei bist du schnell und kannst dich in verschiedene Garderobensysteme eindenken. Auch gehst du sorgsam mit den Sachen der Leute um, bist kommunikativ und freundlich. Die Garderobencrew ist meist die erste sowie letzte Ansprechpartnerin auf einer Veranstaltung und trägt somit maßgeblich zum Lösen der kleinen und großen Probleme bei.',
+    text: 'Du nimmst das persönliche Hab und Gut der Besucher*innen entgegen. Dabei bist du schnell und kannst dich in verschiedene Garderobensysteme eindenken. Auch gehst du sorgsam mit den Sachen der Leute um, bist kommunikativ und freundlich. Die Garderobencrew ist meist die erste sowie letzte Ansprechpartnerin auf einer Veranstaltung und trägt somit maßgeblich zum Lösen der kleinen und großen Probleme bei.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: wardrobe
   },
   {
     headline: '„Die Juten“ Cateringhilfen',
-    text: 'Die Cateringcrew kümmert sich Backstage um die leibliche Versorgung der Künstler:innen. Hier ist ein großes Maß an Vertrauen gefordert, denn du kommst den Stars hautnah. Schnippeln, spülen, verräumen - du sorgst hinter der Bühne für ein gutes Bauchgefühl.',
+    text: 'Die Cateringcrew kümmert sich Backstage um die leibliche Versorgung der Künstler:innen. Hier ist ein großes Maß an Vertrauen gefordert, denn du kommst den Stars hautnah. Schnippeln, spülen, verräumen - du sorgst hinter der Bühne für ein gutes Bauchgefühl.',
     actionLink: emailLinkTeam,
     actionText: emailTextTeam,
     image: pans
