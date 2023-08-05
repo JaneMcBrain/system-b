@@ -37,6 +37,7 @@
     left: 0
     right: 0
     flex-direction: column
+    z-index: 3
 
     .h3
       margin-bottom: 40px
@@ -44,6 +45,9 @@
       line-height: 75px
       word-wrap: break-word
       max-width: 100%
+
+    .text-outline
+      -webkit-text-stroke-width: 1px
     
     .box-highlight
       padding: 60px 90px
@@ -54,6 +58,7 @@
     width: 100%
     height: 100%
     object-fit: cover
+    filter: brightness(0.5)
 
     &--4
       object-position: 38% 50%

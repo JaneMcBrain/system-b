@@ -4,7 +4,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import LogoBlack from '../../components/LogoBlack';
 import LogoWhite from '../../components/LogoWhite';
 import TextAction from '../../components/TextAction/TextAction';
-import { emailLinkTeam, emailTextTeam } from '../../utils';
+import { emailLinkCustomer, emailLinkTeam, emailTextCustomer, emailTextTeam } from '../../utils';
 import './styles.sass'
 const imgLeft =  require('./../../assets/images/bar.jpg')
 const imgRight =  require('./../../assets/images/bottles.jpg')
@@ -149,9 +149,9 @@ function App() {
             className={getSplitClasses('right') + ' customer-intro'}
           >
             <TextAction
-              text={'Du suchst kompetentes Personal für deine Veranstaltung? Dann bist du bei uns genau richtig! Von der Bar bis zur Logistik – bei SYSTEM.B findest du genau die Leute, die dein Event benötigt! Egal ob Konzert, Party, Festival, Biergarten oder Weihnachtsmarkt - jede Veranstaltung ohne Schlips und Kragen wird von uns genauso umgesetzt, wie du es dir wünschst. Bei uns besitzt jeder ein Gesundheitszeugnis und Zapfen ist eine Grundausbildung!'}
-              actionText={emailTextTeam}
-              actionLink={emailLinkTeam}
+              text={'Wenn du auf der Suche nach Personal für deine Veranstaltung bist oder Unterstützung bei der Organisation suchst, bist du hier genau richtig. Wir sind Personaldienstleister für Konzerthäuser, Clubs, Festivals, Open Air Locations, Catering Unternehmen und alle die ohne Schlips und Kragen arbeiten und bieten Unterstützung im Bühnenbau sowie Veranstaltungstechniker**innen an. Schreib uns einfach an! Wir freuen uns auf dich!'}
+              actionText={emailTextCustomer}
+              actionLink={emailLinkCustomer}
             />
           </div>
         }

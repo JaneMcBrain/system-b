@@ -6,8 +6,6 @@ interface AccordionProps{
 export interface AccordionContent{
   headline: string
   text: string
-  actionLink: string
-  actionText: string
   image?: any
 }
 
@@ -20,8 +18,7 @@ export default function Accordion({data}: AccordionProps){
           <div className="accordion__text">
             <h3 className="h3 text-outline">{item.headline}</h3>
             <div className="box-highlight">
-              <p className="medium-text spacing-bottom-30">{item.text}</p>
-              <a className="link-dark large-text bold" href={item.actionLink}>{item.actionText}</a>
+              <p className="medium-text"  dangerouslySetInnerHTML={{__html: item.text}} />
             </div>
           </div>
           <img className={`accordion__image accordion__image--${index}`} src={item.image} alt={item.headline} />
