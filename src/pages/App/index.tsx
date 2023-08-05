@@ -20,7 +20,9 @@ function App() {
   }
 
   const onLogoClick = () => {
-    console.log('logo click')
+    if(showCustomer || showTeam){
+      navigate("../new");
+    }
   }
 
   useEffect(() => {
@@ -45,12 +47,16 @@ function App() {
   }, [history.location])
 
   const onTeamClick = () => {
-    setShowTeam(true)
-    navigate("./team");
+    if(!showTeam){
+      setShowTeam(true);
+      navigate("./team");
+    }
   }
   const onCustomerClick = () => {
-    setShowCustomer(true)
-    navigate("./customer");
+    if(!showCustomer){
+      setShowCustomer(true);
+      navigate("./customer");
+    }
   }
 
   return (
@@ -73,7 +79,7 @@ function App() {
                 <h1 className="split-view__h1 h3">
                   <span>Werde</span>
                   <span><span className="text-outline">Teil</span> von</span>
-                  <span>System B.</span>
+                  <span>System.B</span>
                 </h1>
               :
                 <h1 className="split-view__h1 h3">
@@ -97,7 +103,7 @@ function App() {
             className={getSplitClasses('right') + ' team-intro'}
           >
             <TextAction
-              text={'Du möchtest Erfahrungen im gastronomischen Bereich zu sammeln, oder bist vielleicht sogar schon ein Gastro-Profi? Dann bist du bei uns genau richtig. Wir arbeiten seit Jahren mit unterschiedlichen Eventlocations, Clubs und Konzerthäusern zusammen und verschaffen dir Jobs von Spandau bis Köpenick. Das klingt gut? Dann melde dich und werde Teil unserer Crew! Wir freuen uns auf deine Bewerbung!'}
+              text={'Du möchtest Erfahrungen im gastronomischen Bereich sammeln, oder bist vielleicht sogar schon ein Gastro-Profi? Dann bist du bei uns genau richtig. Wir arbeiten seit Jahren mit unterschiedlichen Eventlocations, Clubs und Konzerthäusern zusammen und verschaffen dir Jobs von Spandau bis Köpenick. Das klingt gut? Dann melde dich und werde Teil unserer Crew! Wir freuen uns auf deine Bewerbung!'}
               actionText={emailTextTeam}
               actionLink={emailLinkTeam}
             />
@@ -151,12 +157,6 @@ function App() {
         }
       </div>
       <Outlet />
-      {/* {showTeam &&
-        <Team />
-      }
-      {showCustomer &&
-        <Customer />
-      } */}
     </>
   );
 }
