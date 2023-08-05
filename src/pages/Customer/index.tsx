@@ -12,15 +12,16 @@ function Customer(){
     {text: 'Unser Team', link: 'team-structure'},
     {text: 'Kontakt', link: 'contact'}
   ]
+  const type="customer"
   return(
     <div>
       <Navigation items={navItems} />
       <div className="content">
         <About />
         <TeamStructure />
-        <Marquee text="Gemeinsam machen wir dein Event zu einem Erfolg!" />
+        <Marquee type={type} text="Gemeinsam machen wir dein Event zu einem Erfolg!" />
         <Partner />
-        <Form type="customer" />
+        <Form type={type} />
         <Footer />
       </div>
     </div>

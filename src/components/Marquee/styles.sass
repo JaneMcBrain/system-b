@@ -13,12 +13,47 @@
       right: -$page-padding-small
 
 .marquee
+  display: flex
   white-space: nowrap
-  animation: banner 10s infinite linear
+
+  &--team
+    animation: teambanner 20s infinite linear
+  &--customer
+    animation: customerbanner 20s infinite linear
+
+  .h2
+    padding-right: 32px
+  
+  +breakpoint(small)
+    &--team
+      animation: teambanner-phone 20s infinite linear
+    &--customer
+      animation: customerbanner-phone 20s infinite linear
+
+    .h2
+      padding-right: 16px
 
 
-@keyframes banner
+@keyframes teambanner
   0%
     transform: translate3d(0, 0, 0)
   100%
-    transform: translate3d(-161%, 0, 0)
+    transform: translate3d(-4510.55px, 0, 0)
+
+@keyframes customerbanner
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(-3806.31px, 0, 0)
+
+@keyframes customerbanner-phone
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(-1651.53px, 0, 0)
+
+@keyframes teambanner-phone
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(-1956.71px, 0, 0)
