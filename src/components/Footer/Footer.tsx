@@ -6,13 +6,13 @@ export default function Footer(){
         <div className="split-content">
           <div className="contact">
             <h1 className="h3">Lass uns sprechen!</h1>
-            <a className="link-light bold large-text primary-text" href="mailto:info@systemb.berlin">E-Mail Senden</a>
+            <a className="link-light bold large-text primary-text" href="tel:0157 50178119">0157 50178119</a>
           </div>
           <div className="impress">
             <h4 className="primary-text bold large-text spacing-bottom-20">Kontakt</h4>
             <p className="large-text">Josef-Orlopp-Str.92</p>
             <p className="large-text spacing-bottom-20">10365 Berlin</p>
-            <p className="large-text">info@systemb.berlin</p>
+            <a className="link-light bold large-text primary-text" href="mailto:info@systemb.berlin">E-Mail Senden</a>
             <div className="social-icons">
               <img src={instagram} alt="System.B Instagram"/>
             </div>
