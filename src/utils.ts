@@ -76,17 +76,17 @@ export const teamServices: AccordionContent[] = [
     image: glasses
   }, 
   {
-    headline: 'Freundliche Garderobencrew',
+    headline: 'Freundliche Garderoben&shy;crew',
     text: 'Du nimmst das persönliche Hab und Gut der Besucher*innen entgegen. Dabei bist du schnell und kannst dich in verschiedene Garderobensysteme eindenken. Auch gehst du sorgsam mit den Sachen der Leute um, bist kommunikativ und freundlich. Die Garderobencrew ist meist die erste sowie letzte Ansprechpartnerin auf einer Veranstaltung und trägt somit maßgeblich zum Lösen der kleinen und großen Probleme bei.<br /><br />Garderobenqueen/king<br />Wenn du schon alle Tricks und Kniffe des Garderobenservice kennst, du eigene Ideen für Garderobensysteme hast, gerne ein Team leitest und die Nerven zum troubleshooter hast “á la Jacke weg, was nun?” dann bist du eine wahre Garderobenqueen / ein wahrer Garderobenking.',
     image: wardrobe
   },
   {
-    headline: 'Veranstaltungsleitung ADL´s',
+    headline: 'Veran&shy;staltungs&shy;leitung ADL´s',
     text: 'Behalte den Überblick und den Laden am Laufen. Als Abenddienstleitung / Veranstaltungsleitung sorgst du dafür den Gästen ein Lächeln auf die Lippen zu zaubern und somit für einen gelungenen Ablauf des ganzen Events - egal ob kleiner Weihnachtsmarkt mit 100 Gästen, einer Konzertveranstaltung mit 3000 Leuten oder einer Produktion auf Festivals. Du koordinierst hinter den Kulissen ein ganzes Team und bist das Kommunikationsglied zwischen Gästen, Veranstalter*innen und deiner Crew. Nebenbei behältst du die Kassen und Abrechnungen im Auge und kümmerst dich flexibel und lösungsorientiert um alle auftretenden Probleme.',
     image: adl
   },
   {
-    headline: 'Aktive Logistiker*innen / Runner',
+    headline: 'Aktive Logistiker&shy;*innen / Runner',
     text: 'Du organisierst den Nachschub und sorgst dafür, dass Bars oder Caterings immer mit ausreichend Ware und Equipment versorgt sind. Und obwohl du ein Auge dafür hast, dir Transport und Wege so einfach wie möglich zu machen, fühlst dich erst so richtig wohl, wenn du ins Schwitzen kommst.<br /><br />Und wenn dir Kühlschränke auffüllen nicht mehr reicht und du gute Ideen für Lagerkonzepte hast, gerne eine Logistikcrew anleitest, für dich Kühlketten, CO2-Druck, Hubwagen und Inventur keine Fremdwörter sind hast du definitiv das Zeug als Logistikchef*in durchzustarten.',
     image: bar
   },
@@ -96,12 +96,12 @@ export const teamServices: AccordionContent[] = [
     image: tech
   },
   {
-    headline: 'Die Servicecrew',
+    headline: 'Die Service&shy;crew',
     text: 'Egal ob Sektempfang, Flying Snacks, oder Ansprechpartner*in für die Gäste: Du bist immer zur Stelle, um den Besucher*innen einen gelungenen Abend zu bereiten. Du behältst das Buffet im Auge, sorgst für ein ordentliches Ambiente und hast dabei natürlich immer ein Lächeln auf den Lippen.',
     image: glasses2
   },
   {
-    headline: '„Die Juten“ Cateringhilfen',
+    headline: '„Die Juten“ Catering&shy;hilfen',
     text: 'Die Cateringcrew kümmert sich Backstage um die leibliche Versorgung der Künstler:innen. Hier ist ein großes Maß an Vertrauen gefordert, denn du kommst den Stars hautnah. Schnippeln, spülen, verräumen - du sorgst hinter der Bühne für ein gutes Bauchgefühl.',
     image: pans
   },
@@ -149,17 +149,17 @@ export const customerServices: AccordionContent[] = [
     image: glasses
   },
   {
-    headline: 'Garderobenpersonal',
+    headline: 'Garderoben&shy;personal',
     text: 'Bei uns ist das Hab und Gut deiner Gäste in guten Händen! Unsere Garderobencrew kümmert sich als erste und letzte Ansprechpartnerin auf deinem Event um alles, was nicht mit auf die Tanzfläche muss – und dass immer mit System und einem freundlichen Lächeln!',
     image: wardrobe
   },
   {
-    headline: 'Veranstaltungsleitung ADL´s',
+    headline: 'Veran&shy;staltungs&shy;leitung ADL´s',
     text: 'Unsere erfahrenen Veranstaltungsleitungen koordinieren hinter den Kulissen das gesamte Event. Als Kommunikationsglied zwischen Gästen, euch als Veranstalter*innen und dem restlichen Team sorgen Sie für einen reibungslosen Ablauf und kümmern sich lösungsorientiert um alle auftretenden Probleme. Sie behalten Kassen und Abrechnungen im Auge, sind für deine Gäste da und unterstützen dich nebenbei bei allem, was dir als Veranstalter*in wichtig ist. Die ADL’s sind also deine Ansprechpartner*innen Nummer 1 – und echte Allrounder noch dazu!',
     image: adl
   },
   {
-    headline: 'Logistiker*innen / Runner',
+    headline: 'Logistiker&shy;*innen / Runner',
     text: 'Organisation von Ware und Equipment gehören bei jedem gut laufenden Event dazu – auch wenn es mal sehr voll ist und schnell gehen muss. Unsere Runner versorgen die Bar mit ausreichend Nachschub und kümmern sich um den logistischen Ablauf. Lagerkonzepte, Kühlketten und Inventur inklusive!',
     image: bar
   },
@@ -169,12 +169,12 @@ export const customerServices: AccordionContent[] = [
     image: tech
   },
   {
-    headline: 'Servicepersonal',
+    headline: 'Service&shy;personal',
     text: 'Du hättest gerne Sektempfang und Flying Snacks? Kein Problem! Unsere Serviceprofis sind für deine Gäste da, behalten das Buffet im Auge und sorgen für ein ordentliches Ambiente. Aufgeschlossen, zuvorkommend und aufmerksam – richtig guter Service eben!',
     image: glasses2
   },
   {
-    headline: 'Cateringhilfen',
+    headline: 'Catering&shy;hilfen',
     text: 'Natürlich wollen auch deine Artists mit allem versorgt sein, was sie brauchen. Mit unseren Cateringhilfen ist das kein Problem – sie sind backstage für die Künstler*innen da, schnippeln, spülen, verräumen und sorgen für ein gutes Bauchgefühl!',
     image: pans
   },

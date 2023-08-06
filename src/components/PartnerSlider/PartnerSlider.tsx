@@ -43,6 +43,14 @@ export default function PartnerBanner(){
             </a>
           </li>
         )}
+        <li className='space-helper'></li>
+        {images.map((item, index) =>
+          <li key={item.image + index} className="partner-banner__list-item">
+            <a href={item.link} target='_blank' rel='noreferrer'>
+              <img src={item.image} alt={`partner-${index}`}/>
+            </a>
+          </li>
+        )}
       </ul>
     </div>
   )

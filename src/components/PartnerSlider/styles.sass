@@ -1,35 +1,41 @@
 @import './../../styles/mixins'
 @import './../../styles/variables'
   
-$number_images: 4
+$number_images: 15
 $image_width: 250px
 $image_space: 80px
+$image_padding: 8px
+$total_image_width: calc($image_width + $image_space)
 
 .partner-banner
-  overflow-x: scroll
-  scrollbar-width: 0px
+  overflow: hidden
   width: 100vw
-  margin-left: -100px
-  padding-left: 100px
-  +hide-scrollbar
+  padding-left: $page-padding
+  margin:
+    left: -$page-padding
+    right: -$page-padding
+  +breakpoint(small)
+    margin:
+      left: -$page-padding-small
+      right: -$page-padding-small
 
   .dark &
     background-color: $secondary
 
   &__list
-    padding-right: calc($page-padding * 2)
-    white-space: nowrap
     display: flex
     align-items: center
-    width: calc($number_images*$image_width)
+    animation: partnerslide 60s infinite linear
 
   &__list-item
     margin-right: $image_space
-    padding: 8px
+    padding: $image_padding
 
     img
       max-width: $image_width
       max-height: 150px
+  .space-helper + li
+    margin-left: 20px
 
   +breakpoint(small)
     &__list
@@ -38,3 +44,9 @@ $image_space: 80px
     &__list-item
       img
         width: 150px
+
+@keyframes partnerslide
+  0%
+    transform: translate3d(0, 0, 0)
+  100%
+    transform: translate3d(calc(($number_images * $total_image_width + $image_padding)*-1), 0, 0)
