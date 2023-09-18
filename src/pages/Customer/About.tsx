@@ -1,6 +1,6 @@
 import ArticleSections from "../../components/ArticleSection/ArticleSection";
 import ScrollDown from "../../components/ScrollDown/ScrollDown";
-import UpScroll from "../../components/UpScroll";
+import ScrollUp from "../../components/ScrollUp";
 import { customerArticles } from "../../utils";
 
 export default function About(){
@@ -12,7 +12,7 @@ export default function About(){
   return(
     <div>
       <ScrollDown />
-      <UpScroll />
+      <ScrollUp />
       <div className="about-section" id="about">
         <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
         {customerArticles.map((article, index) =>

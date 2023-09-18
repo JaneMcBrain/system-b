@@ -23,6 +23,8 @@ root.render(
         <Route path="/new" element={<App />}>
           <Route path="/new/customer" element={<Customer />} />
           <Route path="/new/team" element={<Team />} />
+          <Route path="/new/datenschutz" element={<Team />} />
+          <Route path="/new/impressum" element={<Team />} />
         </Route>
       </Routes>
     </Router>

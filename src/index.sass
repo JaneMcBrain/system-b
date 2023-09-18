@@ -16,9 +16,15 @@ body
     background-color: $white
     color: $black
 
+    .popup
+      background-color: $white
+
   &.dark
     background-color: $black
     color: $white
+
+    .popup
+      background-color: $black
 
 // Typography
 .medium-text
@@ -100,6 +106,10 @@ body
 .primary-text
   color: $primary
 
+.simple-link
+  text-decoration: underline
+  cursor: pointer
+
 .link-dark:hover
   color: transparent
   -webkit-text-stroke-width: 1px
@@ -147,6 +157,11 @@ body
 .spacing-bottom-30
   margin-bottom: 30px
 
+.spacing-bottom-50
+  margin-bottom: 50px
+  +breakpoint(small)
+    margin-bottom: 20px
+
 .spacing-bottom-100
   margin-bottom: 100px
   +breakpoint(small)
@@ -165,7 +180,7 @@ body
   position: fixed
   bottom: calc($page-padding/2)
   right: $page-padding
-  z-index: 3
+  z-index: 6
   cursor: pointer
 
   +breakpoint(small)
@@ -312,3 +327,20 @@ label.textarea
       margin-bottom: 30px
   a
     margin-bottom: 40px
+
+.popup
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 5
+  padding-top: $page-padding
+  padding-bottom: $page-padding
+  overflow: scroll
+
+  .nav-bar
+    position: absolute
+    top: calc($page-padding/2)
+    right: calc($page-padding/2)
+    display: block

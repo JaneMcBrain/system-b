@@ -1,5 +1,11 @@
 import instagram from './../../assets/logos/instagram.svg'
-export default function Footer(){
+
+interface FooterProps{
+  onShowDS: (v: boolean) => void
+  onShowImpressum: (v: boolean) => void
+}
+
+export default function Footer({onShowDS, onShowImpressum}: FooterProps){
 
   return(
       <div className="footer-section">
@@ -19,10 +25,10 @@ export default function Footer(){
           </div>
         </div>
         <div className="footer-nav">
-          <div className="footer-nav__links">
-            <a className="medium-text">Datenschutz</a>
-            <a className="medium-text">Impressum</a>
-          </div>
+          <ul className="footer-nav__links">
+            <li onClick={() => onShowDS(true)} className="footer-nav__link medium-text">Datenschutz</li>
+            <li onClick={() => onShowImpressum(true)} className="footer-nav__link medium-text">Impressum</li>
+          </ul>
           <h2 className="h1 text-outline">System.B</h2>
         </div>
       </div>

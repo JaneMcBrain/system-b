@@ -22,7 +22,7 @@ function Customer(){
         <Marquee type={type} text="Gemeinsam machen wir dein Event zu einem Erfolg!" />
         <Partner />
         <Form type={type} />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   )

@@ -1,6 +1,7 @@
-export default function ScrollDown(){
+export default function ScrollUp(){
   const scrollTop = () => {
-    window.scrollTo({top: 0, behavior: 'smooth'})
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    document.getElementsByClassName("popup")[0].scrollTo({top: 0, behavior: 'smooth'});
   }
   return(
     <svg className="up-scroll" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" onClick={scrollTop}>
