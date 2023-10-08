@@ -1,7 +1,7 @@
 @import './../../styles/mixins'
 @import './../../styles/variables'
   
-$number_images: 15
+$number_images: 18
 $image_width: 250px
 $image_space: 80px
 $image_padding: 8px
@@ -49,4 +49,4 @@ $total_image_width: calc($image_width + $image_space)
   0%
     transform: translate3d(0, 0, 0)
   100%
-    transform: translate3d(calc(($number_images * $total_image_width + $image_padding)*-1), 0, 0)
+    transform: translate3d(calc(($number_images * $total_image_width - $page-padding)*-1), 0, 0)

@@ -14,11 +14,17 @@ import muenze from './../../assets/images/partner/muenze.png'
 import nbk from './../../assets/images/partner/nbk-logo.png'
 import silverwings from './../../assets/images/partner/Silverwings.png'
 import sws from './../../assets/images/partner/sws-logo-white.png'
+import schwuz from './../../assets/images/partner/Schwuz.png'
+import livenation from './../../assets/images/partner/livenation.png'
+import kombinat from './../../assets/images/partner/amukombi.png'
 
 export default function PartnerBanner(){
   const images = [
     { image: eisfuchs, link: 'https://eisfuchs-leipzig.de/' },
     { image: arena, link: 'https://www.arena.berlin/' },
+    { image: schwuz, link: 'https://www.schwuz.de/' },
+    { image: livenation, link: 'https://www.theapolis.de/de/organization/live-nation-theater-gmbh' },
+    { image: kombinat, link: 'https://www.amuesierkombinat.de/' },
     { image: bb, link: 'https://www.bb-promotion.com/veranstaltungen/berlin-berlin/' },
     { image: best, link: 'https://bestvd.com/' },
     { image: channel, link: 'https://channelmusic.de/' },
