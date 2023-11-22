@@ -26,11 +26,16 @@ $img_height: 410px
       padding-right: 50px
       padding-left: 100px
 
+      .split-view__h1
+        right: 85px
+        width: 465px
+
+        .team-active &
+          width: auto
+          right: 140px
+
       .split-view__img
         align-self: flex-end
-      
-      .split-view__h1
-        left: 100px
 
       .split-view__text
         max-width: 375px
@@ -41,13 +46,13 @@ $img_height: 410px
       padding-left: 50px
 
       .split-view__h1
-        right: 63px
+        left: 186px
       
       .split-view__logo
         left: 0
       
       .split-view__text
-        max-width: 413px
+        max-width: 439px
 
   &__logo
     position: absolute
@@ -70,7 +75,7 @@ $img_height: 410px
   
   &__h1
     position: absolute
-    top: 487px
+    top: 301px
     display: flex
     flex-direction: column
     line-height: 0.79
@@ -79,14 +84,23 @@ $img_height: 410px
     margin-top: 146px
 
   +breakpoint(medium)
+    .small-viewport-helper
+      position: initial
+
+    &__h1
+      top: 487px
+
     &__split--left
       padding-left: 50px
       .split-view__h1
+        right: inherit
         left: 50px
+
     &__split--right
       padding-right: 50px
       .split-view__h1
         right: 50px
+        left: inherit
   
   +breakpoint(small)
     flex-direction: column
@@ -159,6 +173,9 @@ $img_height: 410px
   justify-content: center
   min-height: $img_height
 
+  +breakpoint(xlarge)
+    max-width: 800px
+
 .customer-active
   height: 700px
 
@@ -180,7 +197,7 @@ $img_height: 410px
   +breakpoint(small)
     position: inherit
     left: inherit
-    min-height: auto
+    min-height: 614px
 
     .customer-active &
       left: 0
@@ -201,3 +218,6 @@ $img_height: 410px
     margin-top: 20px
     padding-top: 0
     padding-bottom: 57px
+
+.small-viewport-helper
+  position: relative

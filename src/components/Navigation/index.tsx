@@ -24,7 +24,7 @@ export default function Navigation({items}: NavigationProps){
   }
 
   return(
-    <div className="header">
+    <div className="header wide-screen-helper">
       <div className={iconClass} onClick={onIconClick}></div>
       <ul className={navClass}>
         {items.map(item =>

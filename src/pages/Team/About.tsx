@@ -15,7 +15,7 @@ export default function About(){
     <div>
       <ScrollDown />
       <ScrollUp />
-      <div className="about-section" id="about">
+      <div className="about-section wide-screen-helper" id="about">
         <h1 className="h1 rotate-headline rotate-headline--right text-outline">About</h1>
         {teamArticles.map((article, index) =>
           <ArticleSections
