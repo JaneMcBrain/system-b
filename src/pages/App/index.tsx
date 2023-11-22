@@ -103,7 +103,7 @@ function App() {
             className={getSplitClasses('right') + ' team-intro'}
           >
             <TextAction
-              text={'Du möchtest Erfahrungen im gastronomischen Bereich sammeln, oder bist vielleicht sogar schon ein Gastro-Profi? Dann bist du bei uns genau richtig. Wir arbeiten seit Jahren mit unterschiedlichen Eventlocations, Clubs und Konzerthäusern zusammen und verschaffen dir Jobs von Spandau bis Köpenick. Das klingt gut? Dann melde dich und werde Teil unserer Crew! Wir freuen uns auf deine Bewerbung!'}
+              text={'Du möchtest Erfahrungen im gastronomischen Bereich sammeln oder bist vielleicht sogar schon ein Gastro-Profi? Dann bist du bei uns genau richtig. Wir arbeiten seit Jahren mit unterschiedlichen Eventlocations, Clubs und Konzerthäusern zusammen und verschaffen dir Jobs von Spandau bis Köpenick. Das klingt gut? Dann melde dich und werde Teil unserer Crew! Wir freuen uns auf deine Bewerbung!'}
               actionText={emailTextTeam}
               actionLink={emailLinkTeam}
             />
@@ -149,7 +149,7 @@ function App() {
             className={getSplitClasses('right') + ' customer-intro'}
           >
             <TextAction
-              text={'Wenn du auf der Suche nach Personal für deine Veranstaltung bist oder Unterstützung bei der Organisation suchst, bist du hier genau richtig. Wir sind Personaldienstleister für Konzerthäuser, Clubs, Festivals, Open Air Locations, Catering Unternehmen und alle die ohne Schlips und Kragen arbeiten und bieten Unterstützung im Bühnenbau sowie Veranstaltungstechniker**innen an. Schreib uns einfach an! Wir freuen uns auf dich!'}
+              text={'Wenn du auf der Suche nach Personal für deine Veranstaltung bist oder Unterstützung bei der Organisation suchst, bist du hier genau richtig. Wir sind Personaldienstleister für Konzerthäuser, Clubs, Festivals, Open Air Locations, Catering Unternehmen und alle die ohne Schlips und Kragen arbeiten und bieten Unterstützung im Bühnenbau sowie Veranstaltungstechniker*innen an. Schreib uns! Wir freuen uns auf dich!'}
               actionText={emailTextCustomer}
               actionLink={emailLinkCustomer}
             />

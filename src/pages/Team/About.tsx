@@ -8,9 +8,8 @@ export default function About(){
   const knowhow =  require('./../../assets/images/knowhow.jpg')
   const person =  require('./../../assets/images/person.jpg')
   const subway =  require('./../../assets/images/subway.jpg')
-  const fun =  require('./../../assets/images/fun.jpg')
   const supreme =  require('./../../assets/images/supreme.jpg')
-  const images = [relax, knowhow, person, subway, fun, supreme]
+  const images = [relax, knowhow, person, subway, supreme]
 
   return(
     <div>
