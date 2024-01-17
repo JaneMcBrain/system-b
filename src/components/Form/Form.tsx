@@ -16,7 +16,7 @@ export default function Form({type}: {type: string}){
 
   function sendForm(event: React.FormEvent<HTMLFormElement>){
     event.preventDefault();
-    const api = 'http://systemb.berlin/sendEmail.php';
+    const api = '/sendEmail.php';
     var data = new FormData();
     setLoading(true);
     data.append("type", type);
