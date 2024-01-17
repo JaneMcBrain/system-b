@@ -10,7 +10,7 @@ export default function OnBoard(){
       <div className="onboard-questions">
         <div className="onboard-questions__number invisible-small"></div>
         <div className="onboard-questions__text">
-          <p className="box-highlight padding-80 large-text">Hi,<br/>du wärst gerne Teil unseres Teams? Toll!<br/>Um dich besser kennenzulernen, stell dich kurz vor. Dies kannst du entweder schriftlich tun oder du lädst ein Video von dir hoch. Bitte beantworte uns, neben deinem Persönlichen Teil, auch unsere Fragen:  </p>
+          <p className="box-highlight padding-80 large-text">Hi,<br/>du wärst gerne Teil unseres Teams? Toll!<br/>Um dich besser kennenzulernen, stell dich kurz vor. Dies kannst du entweder hier schriftlich tun oder du schickst uns ein Video via WhatsApp an <a href="tel:015750178119">0157 50178119</a>. Bitte beantworte uns, neben deinem Persönlichen Teil, auch unsere Fragen:  </p>
         </div>
         <div className="onboard-questions__number h1 text-outline">1.</div>
         <p className="onboard-questions__text h3">Wer bist du & was machst du gerne?</p>

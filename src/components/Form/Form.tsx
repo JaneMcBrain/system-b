@@ -1,4 +1,4 @@
-import { ChangeEvent, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import './styles.sass'
 
 export default function Form({type}: {type: string}){
@@ -6,9 +6,6 @@ export default function Form({type}: {type: string}){
   const isTeam = () => type === 'team'
   const isCustomer = () => type === 'customer'
   const className=  isTeam()? "split-content form-section form-section--dark" : "split-content form-section"
-  const hiddenFileInput = useRef(null);
-  const [file, setFile] = useState<File | null>()
-  const [fileName, setFileName] = useState<string>('')
   const nameInput = useRef<HTMLInputElement>(null)
   const companyInput = useRef<HTMLInputElement>(null)
   const emailInput = useRef<HTMLInputElement>(null)
@@ -16,13 +13,6 @@ export default function Form({type}: {type: string}){
   const ageInput = useRef<HTMLInputElement>(null)
   const [message, setMessage] = useState<string | null>('')
   const [loading, setLoading] = useState<boolean>(false)
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    if(event.target.files && event.target.files[0].name){
-      setFileName(event.target.files[0].name);
-      setFile(event.target.files[0])
-    }
-  };
 
   function sendForm(event: React.FormEvent<HTMLFormElement>){
     event.preventDefault();
@@ -36,9 +26,6 @@ export default function Form({type}: {type: string}){
     if(phoneInput.current?.value) data.append("phone", phoneInput.current?.value);
     if(ageInput.current?.value) data.append("age", ageInput.current?.value);
     data.append("message", message as string);
-    if(file){
-      data.append("file", file as Blob, fileName);
-    }
 
     fetch(api, {
       method: 'POST',
@@ -78,26 +65,6 @@ export default function Form({type}: {type: string}){
             </>
           }
           <span className="textarea" role="textbox" contentEditable onInput={e => setMessage(e.currentTarget.textContent)}></span>
-          {isTeam() &&
-          <>
-            <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
-            <input
-              ref={hiddenFileInput}
-              type="file"
-              accept="video/*"
-              style={{ display: 'none' }}
-              id="video-upload"
-              onChange={handleChange}
-            />
-            <label htmlFor="video-upload" className="textarea">
-              {fileName.length > 0 ?
-                <p className="primary-text">Hochgeladen: {fileName}</p> :
-                <p className="medium-text">Video uploaden</p>
-              }
-              <div className="upload-button"></div>
-            </label>
-          </>
-          }
           <div className="checkbox-wrapper">
             <input className="checkbox-input" id="agb_check" type="checkbox" checked={checked} onChange={() => setChecked(!checked)} required/>
             <label htmlFor="agb_check" className="small-text">Ich erkläre mich mit der Verarbeitung der eingegebenen Daten, sowie der Datenschutzerklärung einverstanden.</label>
